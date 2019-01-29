@@ -43,7 +43,7 @@ impl Serializer {
     }
 
     fn serialize_f64(self, v: f64) -> Result<()> {
-        let s = format!("{:e}", v);
+        let s = format!("{:.32}", v);
         self.output += &format!("{}:{}^", s.len(), s);
         Ok(())
     }

@@ -41,6 +41,6 @@ impl TNetFloat {
 impl Display for TNetFloat {
 
     fn fmt(&self, f: &mut Formatter) -> Result<(), Error> {
-        write!(f, "{}", self.to_f64())
+        write!(f, "{:.32}", self.to_f64())
     }
 }

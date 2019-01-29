@@ -1,0 +1,7 @@
+[package]
+name = "tnetstr"
+version = "0.1.0"
+authors = ["Tom <anemail@somemail.com>"]
+edition = "2018"
+
+[dependencies]

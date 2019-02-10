@@ -3,7 +3,7 @@ use serde;
 use std::fmt::{Formatter, Error as FmtError};
 
 #[derive(Debug)]
-pub struct SerdeTNetError(TNetStrError);
+pub struct SerdeTNetError(pub TNetStrError);
 
 impl std::fmt::Display for SerdeTNetError {
     fn fmt(&self, f: &mut Formatter) -> std::result::Result<(), FmtError> {
